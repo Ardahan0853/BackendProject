@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 #{title}
+  form(action="/new" method="post")
+    input(type="text" id="text" name="text" placeholder="Enter your text")
+    input(type="text" id="name" name="name" placeholder="First Name")
+    input(type="text" id="family_name" name="family_name" placeholder="Last Name")
+    button(type="submit") Submit
